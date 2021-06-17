@@ -5,12 +5,25 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 48em) {
+  :root {
+    font-size: calc(1rem + ((1vw - 0.48rem) * 0.6944));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 120em) {
+  :root {
+    font-size: 1.5rem;
+  }
+}
+
 #content {
   display: flex;
   flex-direction: column;
 }
 .card {
-  width: 25rem;
+  max-width: 25rem;
 }
 
 nav > li {
@@ -21,10 +34,13 @@ nav > li {
   padding-left: 12px;
   cursor: pointer;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+}
 
 nav > li > a {
   color: gray;
-  font-size: 1.5rem;
 }
 
 .menu-table {
