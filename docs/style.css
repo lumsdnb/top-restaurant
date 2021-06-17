@@ -26,3 +26,9 @@ nav > li > a {
   color: gray;
   font-size: 1.5rem;
 }
+
+.menu-table {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
