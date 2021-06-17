@@ -12,7 +12,6 @@ const navBar=()=>{
         let a = document.createElement('a');
         a.append(linkText)
         a.title = element;
-        a.href = `/${element}`;
         entry.appendChild(a)
         nav.append(entry)
     }

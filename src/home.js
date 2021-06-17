@@ -1,5 +1,4 @@
 const homePage=()=>{
-    console.log("homepage loaded");
     const placeholder = document.createElement("div")
     const headerEl= document.createElement("header")
     const h1El = document.createElement("h1")
