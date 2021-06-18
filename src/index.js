@@ -13,7 +13,6 @@ function updateContent(e){
     const card = document.querySelector(".card")
     switch (this.title) {
         case "home":
-            console.log(container);
             card.remove()
             container.append(homePage())
             break;
