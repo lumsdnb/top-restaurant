@@ -1,3 +1,8 @@
+html {
+  --primary-color: hsl(180, 34%, 69%);
+  --dark: hsl(0, 1%, 32%);
+  --darker: hsl(0, 0%, 15%);
+}
 body {
   background-color: hsl(176, 19%, 74%);
   display: flex;
@@ -23,7 +28,7 @@ body {
   flex-direction: column;
 }
 .card {
-  max-width: 25rem;
+  max-width: 30rem;
 }
 
 nav > li {
@@ -40,11 +45,53 @@ nav {
 }
 
 nav > li > a {
-  color: gray;
+  color: var(--darker);
 }
 
 .menu-table {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+tr {
+  padding: 1rem;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  color: var(--dark);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+td,
+th {
+  padding: 0 2rem;
+  color: var(--darker);
+  font-style: italic;
+}
+
+thead tr {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  align-items: center;
+  background: var(--primary-color);
+  font-size: 1rem;
+}
+
+tbody tr {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e3f1d5;
+}
+tbody tr:last-child {
+  border: 0;
 }
