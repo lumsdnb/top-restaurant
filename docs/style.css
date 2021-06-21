@@ -11,6 +11,11 @@ html{
   --font3: 1.728rem;
   --font4: 1.44rem;
   --font5: 1.2rem;
+
+--green1: hsla(94, 37%, 60%, 1);
+--green2: hsla(113, 24%, 49%, 1);
+--green3: hsla(96, 24%, 35%, 1);
+--green4: hsla(170, 22%, 20%, 1);
 }
 @import url('https://fonts.googleapis.com/css?family=Poller+One:400');
 
