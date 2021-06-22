@@ -16,7 +16,7 @@ html {
   --green1: #94bf73;
   --green2: #669b5f;
   --green3: #556f44;
-  --border-standard: black solid 0.2rem;
+  --border-standard: black solid 0.3rem;
 }
 @import url('https://fonts.googleapis.com/css?family=Poller+One:400');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
@@ -138,10 +138,12 @@ nav {
 
 nav > li:nth-child(odd):hover {
   transform: scale(1.05) rotate(2deg);
+  z-index: 2;
   transition: all 120ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 nav > li:nth-child(even):hover {
   transform: scale(1.05) rotate(-2deg);
+  z-index: 2;
   transition: all 120ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .tomato {
@@ -168,8 +170,9 @@ nav > li:nth-child(even):hover {
 }
 
 .patty {
+  margin: 0;
   position: relative;
-  bottom: 6rem;
+  bottom: 6.8rem;
   background-color: var(--patty);
   padding: 1rem;
   border-radius: 1rem;
@@ -180,11 +183,11 @@ nav > li:nth-child(even):hover {
 .menu-table {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0rem;
 }
 
 tr {
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 table {
@@ -194,7 +197,7 @@ table {
   color: var(--lighter-bg);
   border-radius: 6px;
   overflow: hidden;
-  max-width: 800px;
+
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -208,10 +211,14 @@ th {
 
 thead tr {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   height: 2rem;
   align-items: center;
-  background: var(--primary-color);
+  font-size: 1rem;
+  border: 0.3rem dashed var(--mustard);
+  font-weight: 900;
+  font-family: 'Poller One';
   font-size: 1rem;
 }
 
@@ -220,14 +227,16 @@ tbody tr {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #e3f1d5;
+  justify-content: space-between;
 }
 tbody tr:last-child {
   border: 0;
 }
 
 footer {
+  margin: 0;
   position: relative;
-  bottom: 5rem;
+  bottom: 7.5rem;
   background-color: var(--bun);
   color: var(--dark);
   padding: var(--font5);

@@ -39,9 +39,9 @@ const menuPage=()=>{
     const placeholder = document.createElement("div")
   
     let menuItems = [
-        { name: "cool beans burger", weight: "850g", description: "for the cool kids" },
-        { name: "hungry hippo burger", weight: "1320g", description: "for all you hungry bois" },
-        { name: "tasty truffle burger", weight: "420g", description: "tastieee" }
+        { name: "cool beans burger", weight: "850g", description: "with bean shaped ice cubes" },
+        { name: "hungry hippo burger", weight: "1320g", description: "made with real hippo (jk its just beef)" },
+        { name: "tasty truffle burger", weight: "420g", description: "really good" }
     ];
 
     let table = document.createElement("table")
@@ -55,7 +55,7 @@ const menuPage=()=>{
     generateTable(table, menuItems);
 
     const textBodyEl = document.createElement("p")
-    textBodyEl.innerHTML="menu page menu page"
+    
     placeholder.classList.add("card")
     console.log(table);
     let mainContent = document.createElement("div")
