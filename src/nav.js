@@ -8,6 +8,7 @@ const navBar=()=>{
     for (let i = 0; i < entries.length; i++) {
         const element = entries[i];
         let entry = document.createElement("li")
+        entry.classList.add("tomato")
         let linkText = document.createTextNode(element);
         let a = document.createElement('a');
         a.append(linkText)

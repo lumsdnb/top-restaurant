@@ -1,3 +1,6 @@
+import header from "./header"
+import footer from "./footer"
+
 function generateTableHead(table, data) {
   let tableHead = table.createTHead();
   let row = tableHead.insertRow();
@@ -34,12 +37,7 @@ function generateTable(table, data) {
 
 const menuPage=()=>{
     const placeholder = document.createElement("div")
-    const headerEl= document.createElement("header")
-    const h1El = document.createElement("h1")
-    h1El.innerHTML="borger palace"
-    const subTitleEl = document.createElement("h2")
-    subTitleEl.innerHTML="our menu"
-
+  
     let menuItems = [
         { name: "cool beans burger", weight: "850g", description: "for the cool kids" },
         { name: "hungry hippo burger", weight: "1320g", description: "for all you hungry bois" },
@@ -58,10 +56,12 @@ const menuPage=()=>{
 
     const textBodyEl = document.createElement("p")
     textBodyEl.innerHTML="menu page menu page"
-    headerEl.append(h1El,subTitleEl)
     placeholder.classList.add("card")
     console.log(table);
-    placeholder.append(headerEl, textBodyEl,table)
+    let mainContent = document.createElement("div")
+    mainContent.classList.add("patty")
+    mainContent.append(textBodyEl,table)
+    placeholder.append(header("our menu"), mainContent, footer())
     return placeholder
 }
 

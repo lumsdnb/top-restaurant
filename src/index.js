@@ -7,11 +7,11 @@ const container = document.getElementById("content")
 
 container.append(navBar(),homePage())
 
-const navLinks = document.querySelectorAll("a")
+const navLinks = document.querySelectorAll("li")
 
 function updateContent(e){
     const card = document.querySelector(".card")
-    switch (this.title) {
+    switch (this.textContent) {
         case "home":
             card.remove()
             container.append(homePage())

@@ -1,16 +1,14 @@
+import footer from "./footer"
+import header from "./header"
 const contactPage=()=>{
     const placeholder = document.createElement("div")
-    const headerEl= document.createElement("header")
-    const h1El = document.createElement("h1")
-    h1El.innerHTML="borger palace"
-    const subTitleEl = document.createElement("h2")
-    subTitleEl.innerHTML="contact us!"
+    
 
     const textBodyEl = document.createElement("p")
-    textBodyEl.innerHTML="contact details here"
-    headerEl.append(h1El,subTitleEl)
+    textBodyEl.classList.add("patty")
+    textBodyEl.innerHTML="contact details here <br> 168160 6th st <br> fictional town <br> fictional country"
     placeholder.classList.add("card")
-    placeholder.append(headerEl, textBodyEl)
+    placeholder.append(header("contact us!"), textBodyEl,footer())
     return placeholder
 }
 
